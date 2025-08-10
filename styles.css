@@ -1,0 +1,183 @@
+/*
+ * Global styles for Yifu Zhang's personal website.
+ * The design uses a light, professional colour palette inspired by the abstract
+ * mathematical hero illustration. It employs responsive typography and
+ * spacing, ensuring readability across different devices.
+ */
+
+/* Reset some basic elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background-color: #f8fafe;
+}
+
+/* Container for consistent horizontal padding */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Navigation bar styling */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #04417b;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #04417b;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #168bd1;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  height: 45vh;
+  min-height: 300px;
+  background: url('images/hero.png') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #04417b;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+/* Section styling */
+.section {
+  padding: 4rem 0;
+}
+
+.section-alt {
+  background-color: #eef6fb;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #04417b;
+}
+
+.research-item + .research-item {
+  margin-top: 2rem;
+}
+
+.research-item h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #0d5d9d;
+}
+
+.research-item p {
+  margin-bottom: 0.5rem;
+}
+
+.cv-links {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.cv-links li {
+  margin-bottom: 0.5rem;
+}
+
+.cv-links a {
+  color: #04417b;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.cv-links a:hover {
+  border-color: #168bd1;
+}
+
+footer {
+  background-color: #04417b;
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  section h2 {
+    font-size: 1.6rem;
+  }
+}
