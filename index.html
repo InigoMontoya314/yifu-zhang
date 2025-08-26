@@ -1,113 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yifu Zhang | Personal Website</title>
-    <!-- Google Fonts for clean typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yifu Zhang | Mathematics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Navigation and hero banner -->
-    <header>
-        <nav class="navbar">
-            <div class="container nav-container">
-                <h1 class="logo">Yifu&nbsp;Zhang</h1>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#cv">CV</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <section class="hero">
-            <div class="container hero-content">
-                <h2 class="hero-title">Mathematics&nbsp;Researcher</h2>
-                <p class="hero-subtitle">Master of Mathematics student at the University of Oxford with interests in approximation theory and analytic number theory.</p>
-            </div>
-        </section>
-    </header>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-avatar">
+        <img src="images/hero.png" alt="Abstract mathematics header" />
+      </div>
+      <h1 class="brand-name">Yifu Zhang</h1>
+      <p class="brand-role">Mathematics • University of Oxford</p>
+    </div>
 
-    <!-- Main content sections -->
-    <main>
-        <!-- About section -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2>About&nbsp;Me</h2>
-                <p>
-                    Hello! I am Yifu Zhang, a Master of Mathematics (MMath) student at the University of Oxford. 
-                    I have consistently achieved first‑class honours throughout my undergraduate degree and was elected as the first‑year representative of the undergraduate committee. 
-                    My academic journey began at Keystone Academy in Beijing where I completed the International Baccalaureate Diploma with a score of 43/45, earning a full Keystone Scholarship that covered the entire cost of my high school and first year of university. 
-                    Beyond coursework, I am passionate about mathematical research, particularly in the areas of approximation theory and analytic number theory. 
-                    I enjoy tackling problems at the intersection of theory and computation and continuously strive to deepen my understanding of mathematics.
-                </p>
-            </div>
-        </section>
-        
-        <!-- Research section -->
-        <section id="research" class="section section-alt">
-            <div class="container">
-                <h2>Research&nbsp;Interests&nbsp;&amp;&nbsp;Projects</h2>
-                <div class="research-item">
-                    <h3>Approximation&nbsp;Theory</h3>
-                    <p>
-                        In my recent project supervised by Prof.&nbsp;Yuji&nbsp;Nakatsukasa (Oct&nbsp;2024&nbsp;–&nbsp;present), 
-                        I developed an algorithm for function approximation under heteroskedastic noise using Chebyshev interpolation. 
-                        The algorithm improves both the time complexity and accuracy of existing approaches, 
-                        and the results are being prepared for a preprint and journal submission in July&nbsp;2025.
-                    </p>
-                </div>
-                <div class="research-item">
-                    <h3>Analytic&nbsp;Number&nbsp;Theory</h3>
-                    <p>
-                        During the summer of 2023, under the guidance of Dr.&nbsp;Ofir&nbsp;Gorodetsky, I investigated 
-                        the “anatomy of integers”. In this project I extended a lower bound in a paper by Eberhard, Green and Ford (2016) 
-                        concerning permutations that fix sets of certain lengths. This work deepened my appreciation for both the 
-                        combinatorial and analytic facets of number theory.
-                    </p>
-                </div>
-                <p>
-                    My broader research interests span approximation theory, numerical analysis, analytic number theory and 
-                    mathematical problems where theoretical insights inform efficient computation. I am keen to continue exploring 
-                    new ideas in these fields and to collaborate with researchers who share similar passions.
-                </p>
-            </div>
-        </section>
-        
-        <!-- CV section -->
-        <section id="cv" class="section">
-            <div class="container">
-                <h2>Curriculum&nbsp;Vitae</h2>
-                <p>You can download my CV in your preferred format using the links below:</p>
-                <ul class="cv-links">
-                    <li><a href="Yifu_Zhang_CV.pdf" target="_blank" rel="noopener">Download&nbsp;CV&nbsp;(PDF)</a></li>
-                    <li><a href="Yifu_Zhang_CV.docx" target="_blank" rel="noopener">Download&nbsp;CV&nbsp;(Word)</a></li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- Contact section -->
-        <section id="contact" class="section section-alt">
-            <div class="container">
-                <h2>Contact</h2>
-                <p><strong>Address:</strong> University College, University of Oxford, OX1&nbsp;4BH, United&nbsp;Kingdom</p>
-                <p><strong>Email:</strong> <a href="mailto:yifu.zhang@univ.ox.ac.uk">yifu.zhang@univ.ox.ac.uk</a></p>
-                <p><strong>Languages:</strong> English (Fluent), Mandarin (Native), French (B1)</p>
-                <p><strong>Programming Skills:</strong> Python, MATLAB</p>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <p>&copy;&nbsp;2025&nbsp;Yifu&nbsp;Zhang. All rights reserved.</p>
-        </div>
+    <nav class="nav">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#research" class="nav-link">Research</a>
+      <a href="#publications" class="nav-link">Publications</a>
+      <a href="#cv" class="nav-link">CV</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="tags">
+        <span class="tag">Approximation</span>
+        <span class="tag">Numerical LA</span>
+        <span class="tag">Chebyshev</span>
+        <span class="tag">Heteroskedasticity</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="content">
+    <section id="about" class="card">
+      <h2>Short Introduction</h2>
+      <p>
+        I am a mathematician at the University of Oxford (MMath), interested in
+        approximation theory and numerical linear algebra. Recent work includes
+        algorithms for function approximation under heteroskedastic noise
+        using Chebyshev interpolation and related fast transforms.
+      </p>
+
+      <h3>Biography</h3>
+      <p>
+        I completed the International Baccalaureate at Keystone Academy, Beijing
+        (43/45, Keystone Scholarship), and achieved First Class results in each
+        of my years at Oxford. I’ve also worked on analytic number theory
+        (permutations and integer structure) and industry projects in autonomous
+        systems and data-driven modelling.
+      </p>
+    </section>
+
+    <section id="research" class="card">
+      <h2>Research Interests</h2>
+      <ul class="bullets">
+        <li>Function approximation under noisy sampling (heteroskedastic & dependent noise)</li>
+        <li>Chebyshev- and FFT-accelerated methods; rational/AAA-style approximation</li>
+        <li>Numerical linear algebra and randomized algorithms</li>
+        <li>Applications to signal processing and scientific computing</li>
+      </ul>
+
+      <h3>Selected Projects</h3>
+      <div class="projects">
+        <article class="project">
+          <h4>Efficient Function Approximation under Heteroskedastic Noise</h4>
+          <p>
+            Extends Chebyshev interpolation with noise-aware sampling to improve
+            uniform error and runtime in heteroskedastic settings.
+          </p>
+          <ul class="bullets tight">
+            <li>Area: Approximation / Numerical LA</li>
+            <li>Status: preprint & journal submission</li>
+            <li>Supervision: Prof. Yuji Nakatsukasa (Oxford)</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h4>Analytic Number Theory — Permutations & Fixed Sets</h4>
+          <p>
+            Investigated bounds related to permutations fixing sets of certain
+            lengths, building on Eberhard–Ford–Green (2016).
+          </p>
+          <ul class="bullets tight">
+            <li>Area: Probabilistic/Combinatorial number theory</li>
+            <li>Supervision: Dr. Ofir Gorodetsky</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="card">
+      <h2>Publications</h2>
+      <ol class="pub-list">
+        <li>
+          <strong>Nakatsukasa, Yuji; Zhang, Yifu.</strong> (2025).
+          “Efficient Function Approximation Under Heteroskedastic Noise.”
+          <em>arXiv:2508.08683 [math.NA]</em>.
+          <a href="https://arxiv.org/abs/2508.08683" target="_blank" rel="noopener">View preprint</a>
+        </li>
+      </ol>
+    </section>
+
+    <section id="cv" class="card">
+      <h2>Curriculum Vitae</h2>
+      <p>Download my CV:</p>
+      <div class="cv-links">
+        <a class="btn" href="Yifu_Zhang_CV.pdf" download>PDF</a>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><strong>Email</strong>: <span class="email-text">FIRSTNAME.LASTNAME@univ.ox.ac.uk</span></li>
+        <li><strong>Address</strong>: University College, University of Oxford, OX1 4BH, UK</li>
+        <li><strong>Languages</strong>: English (Fluent), Mandarin (Native), French (B1)</li>
+        <li><strong>Programming</strong>: Python, MATLAB</li>
+      </ul>
+      <details class="anti-scrape">
+        <summary>Why not a clickable email?</summary>
+        <p>To reduce automated scraping, the address is shown as plain text.</p>
+      </details>
+    </section>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Yifu Zhang · Oxford Mathematics</p>
     </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
